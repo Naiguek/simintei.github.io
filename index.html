@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio website</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://kit.fontawesome.com/e9addf57a0.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <!--header section of the portfolio website-->
+ <div id="header">
+    <div class="container">
+        <nav>
+            <h1 class="title">@SIMINTEI.</h1>
+            <ul id="sidemenu">
+                <li><a href="#header">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#portfolio">Portfolio</a></li>
+                <li><a href="#contact">Contact</a></li>
+                <i class="fa-solid fa-xmark" onclick="closemenu()"></i>
+            </ul>
+            <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+        </nav>
+        <div class="header-text">
+            <p>Software Engineer:</p>
+            <h1>Hey, I'm <span>Simintei</span> <br>Samuel from Kenya</h1>
+            <h6>$var='I went to Alliance!';</h6>
+        </div>
+    </div>
+ </div>
+ <!--about section of the portfolio website-->
+ <div id="about">
+    <div class="container">
+        <div class="row">
+            <div class="about-col-1">
+                <img src="images/IMG20190915090635.jpg" width="300px" height="400px">
+            </div>
+            <div class="about-col-2">
+                <h1 class="sub-title">About Me</h1>
+                <p>I am a  Software Engineer with a passion for innovation and problem-solving.  I have developed a strong foundation in software development principles, programming languages, and modern technologies. My dedication to learning and adapting has equipped me with the skills needed to contribute effectively to the dynamic field of software engineering.
+                    I actively engaged in various projects that allowed me to apply theoretical knowledge to real-world scenarios. I am experienced in collaborating within diverse teams, understanding project requirements, and delivering solutions that align with both technical and business objectives. My ability to communicate complex technical concepts in a clear and concise manner has proven to be valuable in fostering effective teamwork.
+                    </p>
+                <div class="tab-titles">
+                    <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                    <p class="tab-links" onclick="opentab('experience')">Experience</p>
+                    <p class="tab-links" onclick="opentab('education')">Education</p>
+                </div>
+                <div class="tab-content active-tab" id="skills">
+                    <ul>
+                        <li><span>UX/UI</span><br>Designing Web/App interfaces</li>
+                        <li><span>Frontend Development</span><br>Html5/Css3/Javascript/Bootstrap</li>
+                        <li><span>Backend Development</span><br>Php/Python/Django/Mysql</li>
+                    </ul>
+                </div>
+                <div class="tab-content" id="experience">
+                    <ul>
+                        <li><span>Samis</span><br>Designing of school websites and user training</li>
+                        <li><span>Attain Enterprises</span><br>Developement of online shopping system</li>
+                        <li><span>IEBC</span><br>ICT election trainer and oversite officer</li>
+                    </ul>
+                </div>
+                <div class="tab-content" id="education">
+                    <ul>
+                        <li><span>UEAB 2018-2022</span><br>BSC. in Software Engineering</li>
+                        <li><span>AHS 2014-2017</span><br>KCSE</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+ </div>
+ <!--my services section -->
+ <div id="services">
+    <div class="container">
+        <h1 class="sub-title">My Services</h1>
+        <div class="services-list">
+            <div>
+                <h2>Websites Development</h2>
+                <p>With a focus on cutting-edge technologies and industry best practices, I ensure that each website I develop is tailored to meet the unique goals of my clients. Whether it's an e-commerce platform, a portfolio showcase, or a corporate site, I work closely with you to understand your vision and bring it to life.</p>
+                <a href="#">Learn More</a>
+            </div>
+            <div>
+                <h2>UX/UI/App Designing</h2>
+                <p>Collaboration is at the heart of my design process. Working closely with cross-functional teams, I thrive on turning concepts into reality through open communication and iterative feedback. I believe that the best designs emerge from diverse perspectives and a shared commitment to excellence</p>
+                <a href="#">Learn More</a>
+            </div>
+            <div>
+                <h2>POS Designing and Developement</h2>
+                <p>Welcome to the realm of Point of Sale (POS) innovation! With a proven track record in designing and developing cutting-edge POS solutions, I am dedicated to revolutionizing the way businesses interact with their customers and manage transactions</p>
+                <a href="#">Learn More</a>
+            </div>
+        </div>
+    </div>
+ </div>
+ <!--my portfolio section-->
+ <div id="portfolio">
+    <div class="container">
+        <h1 class="sub-title">My Works</h1>
+        <div class="work-list">
+            <div class="work">
+                <img src="images/Schoolsystem.png" >
+                <div class="layer">
+                    <h3>Student Management System</h3>
+                    <p>The system Enables schools to manage different school activities closely. get in touch to buy</p>
+                </div>
+            </div>
+            <div class="work">
+                <img src="images/onlineshop.png"  >
+                <div class="layer">
+                    <h3>Online Shopping System</h3>
+                    <p>The system Enables businesses to push their  different products online. get in touch to buy</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="btn">See More</div>
+ </div>
+ <!--contact section-->
+ <div id="contact">
+    <div class="container">
+        <div class="row">
+            <div class="contact-left">
+               <h1>Contact Me</h1>
+               <p><i class="fa-solid fa-paper-plane"></i> samuelsimintei20@gmail.com</p>
+               <p><i class="fa-solid fa-phone"></i> +254112513734</p>
+               <div class="social-icons">
+                <a href=""><i class="fa-brands fa-square-facebook"></i></a>
+                <a href=""><i class="fa-brands fa-square-twitter"></i></a>
+                <a href=""><i class="fa-brands fa-square-instagram"></i></a>
+                <a href=""><i class="fa-brands fa-linkedin"></i></a>
+               </div>
+               <a href="images/Siminteicv.pdf" download class="btn btn-2">Download CV</a>
+            </div>
+            <div class="contact-right">
+                <form action="">
+                    <input type="text" name="Name" placeholder="Your name" required>
+                    <input type="email" name="email" placeholder="Your email" required>
+                    <textarea name="message"  rows="6" placeholder="Your message"></textarea>
+                    <button type="submit" class="btn btn-2">Submit</button>
+                </form>
+            </div>
+        </div>
+    </div>
+    <div class="copyright">
+        <p>copyright @simintei developed by simitech in 2023</p>
+    </div>
+ </div>
+ <!--javascript code to run various functions in the about me section-->
+ <script>
+    var tablinks = document.getElementsByClassName("tab-links");
+    var tabcontents = document.getElementsByClassName("tab-content");
+    function opentab(tabname){
+        for(tablink of tablinks){
+            tablink.classList.remove("active-link");
+        }
+        for(tabcontent of tabcontents){
+            tabcontent.classList.remove("active-tab");
+        }
+        event.currentTarget.classList.add("active-link");
+        document.getElementById(tabname).classList.add("active-tab");
+    }
+ </script>
+ <script>
+    var sidemenu = document.getElementById("sidemenu");
+    function openmenu(){
+        sidemenu.style.right = "0";
+    }
+    function closemenu(){
+        sidemenu.style.right = "-200px";
+    }
+ </script>
+</body>
+</html>
